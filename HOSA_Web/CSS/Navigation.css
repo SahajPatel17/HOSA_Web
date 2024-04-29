@@ -1,0 +1,42 @@
+.navBar {
+    background-color: black;
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 10;
+}
+.openbtn {
+    transition: 0.5s;
+    width: 70px;
+    height: 51.5px;
+    background-color: rgb(0, 0, 0, 0);
+    z-index: 10;
+    color:white;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    padding-top: 20px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #707070; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+body {
+    overflow-x: hidden;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/Reset.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/MainPage.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/Navigation.css" />
+    <title>Document</title>
+</head>
+
+
+<body>
+    <nav class="navBar">
+        <button class="openbtn" onclick="navManager()">☰</button>
+    </nav>
+
+    <header id="headerContainer">
+        <img src="/img/Group_Photo.png" id="frontPageImage">
+
+        <div>
+            <h1 id="headerTitle">
+                Global Awareness Initiative
+            </h1>
+    
+            <p id="headerText">
+                We can change the world together through awareness of modern medicine's leading diseases!
+            </p>
+        </div>
+    </header>
+
+    <section id="frontPageJournalHeader">
+        Check Out Our Latest Articles on Medicine's Hottest Topics
+    </section>
+    
+
+    <div class="mainText">
+        <header class="title" style="font-size:5vw">
+        <a class="mainTitle" href="https://sites.google.com/d/1do22mU929Z2aDwGmdtfafRPN9QdxUj2s/p/120nAYBMFfN4035xCSp-Ubhop_ojON0MD/edit" target="_self"> The Disease That Has Haunted Sports Players for Years: CTE</a>
+        </header>
+        <p class="blurb" style="font-size:4vw">
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
+        </p>
+        <p class="readTime" style="font-size:3vw">
+            5 minute read
+        </p>
+    </div>
+
+    <script>
+        let state = 0;
+        function navManager() {
+            if (state == 0){
+                document.getElementsByClassName("navBar")[0].style.width = "250px";
+                document.getElementsByClassName("openbtn")[0].style.marginLeft = "180px";
+                document.getElementsByClassName("openbtn")[0].innerHTML = "&#10005"
+                document.getElementsByClassName("openbtn")[0].style.fontSize = "20px";
+                state = 1;
+            } else {
+                document.getElementsByClassName("navBar")[0].style.width = "70px";
+                document.getElementsByClassName("openbtn")[0].style.marginLeft = "0px";
+                document.getElementsByClassName("openbtn")[0].innerHTML = "☰"
+                document.getElementsByClassName("openbtn")[0].style.fontSize = "25px";
+                state = 0;
+            }
+        }
+    </script>
+</body>
+
+
+</html>
