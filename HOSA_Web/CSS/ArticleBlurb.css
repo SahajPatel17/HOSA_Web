@@ -29,11 +29,11 @@
 }
 .blurbTitle{
     text-decoration: none;
-    color:black
+    color:black;
 }
 .blurbTitle:hover{
     color: gray;
-    cursor: pointer
+    cursor: pointer;
 }
 .blurbSection {
     display: inline-flex;
