@@ -1,0 +1,40 @@
+.blurbContainer{
+    width: 400px;
+    margin-top: 50px;
+    padding-left: 120px;
+}
+.blurbTitleContainer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    width: 400px;
+}
+.blurbContent{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: gray;
+    font-weight: 400;
+    min-width: 300px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    line-height: 1.1;
+}
+.readTime{
+    font-family:Arial, Helvetica, sans-serif;
+    color: gray;
+    font-weight: 200;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.blurbTitle{
+    text-decoration: none;
+    color:black
+}
+.blurbTitle:hover{
+    color: gray;
+    cursor: pointer
+}
+.blurbSection {
+    display: inline-flex;
+}
