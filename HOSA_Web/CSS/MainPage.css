@@ -30,16 +30,18 @@
     z-index: 1;
     position: absolute;
     margin-left: 160px;
-    margin-top: 470px;
+    margin-top: 450px;
     min-height: 100px;
-    width: 400px;
+    width: 500px;
     color: white;
     font-weight: 100;
     font-size: 15px;
-    line-height: 1.2;
+    line-height: 1.5;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #frontPageJournalHeader{
+    text-decoration: none;
+    color: black;
     font-size: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 160px;
