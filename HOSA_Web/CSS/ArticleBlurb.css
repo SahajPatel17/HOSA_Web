@@ -5,7 +5,7 @@
 }
 .blurbTitleContainer{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 25px;
     width: 400px;
 }
@@ -29,7 +29,7 @@
 }
 .blurbTitle{
     text-decoration: none;
-    color:black;
+    color: #231F20;
 }
 .blurbTitle:hover{
     color: gray;
