@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/Reset.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/StandardSetUp.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/Article.css" />
+</head>
+
+
+<body>
+    <nav class="navBar">
+        <button class="openbtn" onclick="navManager()">☰</button>
+
+        <div class="linkContainer">
+            <a class="navLink" href="index.html">Home</a>
+            
+            <a class="navLink" href="ArticleHub.html">Journal</a>
+            <a class="navLink" href="ArticleHub.html">Lessons</a>
+            <a class="navLink" href="ArticleHub.html">Team</a>
+            <a class="navLink" href="ArticleHub.html">Supporters</a>
+        </div>
+    </nav>
+
+    <div class="logoContainer">
+        <img src="../img/Logo_PlaceHolder.png" class="logo">
+        Global Awareness Initiative
+        <button class="login" onclick="">LOGIN</button>
+    </div>
+
+    <div id="mainDiv">
+        <header id="BlogHeader">
+            Tackling CTE: A Growing Concern in School Sports
+        </header>
+        
+        <section id="blogSummary">
+            CTE, once a distant worry, now haunts young athletes. Football's repetitive hits pose risks beyond the field. Recent cases like Junior Seau's underscore urgency for preventive measures. Will we prioritize health over glory?
+        </section>
+        
+        <hr id="lineBreak">
+        
+        <section id="author">
+            <img id="profile"src="https://img.buzzfeed.com/buzzfeed-static/static/2020-03/5/23/enhanced/25a67c968a0a/enhanced-262-1583449224-1.png?output-format=jpg&output-quality=auto">
+            <span> Sahaj Patel</spans>
+        </section>
+        
+        <section id="date">
+                April 20, 2024, 6:11 p.m. ET
+        </section>
+        
+        <main id="mainContent">
+                As the cheers of adoring fans echo through high school stadiums and gymnasiums across the nation, a silent threat lurks in the shadows, casting a long shadow over the bright lights of athletic glory. Chronic Traumatic Encephalopathy (CTE), once a distant concern relegated to the realm of professional athletes, is now infiltrating the ranks of young, aspiring sports stars. But what exactly is fueling this ominous rise, and what can we do to protect our youth?
+                <br>
+                <br>
+                Football, the iconic American sport, has taken center stage in the discussion surrounding CTE. The repetitive blows to the head endured during tackles and collisions can inflict lasting damage on the delicate neural tissue, setting the stage for the development of CTE later in life. But it's not just football; soccer, lacrosse, and even cheerleading carry their own risks, with each concussion serving as a potential stepping stone towards a future plagued by cognitive decline and debilitating symptoms.
+                <br>
+                <br>
+                Consider the case of Junior Seau, a legendary NFL linebacker whose career was marred by the devastating effects of CTE. Despite his undeniable talent and tenacity on the field, Junior's life off the gridiron was marked by struggles with depression and cognitive impairment. His tragic death at the age of 43 sent shockwaves through the sports world, shining a spotlight on the unseen toll of repetitive head trauma.
+                <br>
+                <br>
+                But amidst the gloom and despair, glimmers of hope emerge on the horizon. Recent advancements in neuroimaging techniques offer a glimpse into the intricate mechanisms underlying CTE, paving the way for targeted interventions and preventive measures. From improved helmet designs to stricter concussion protocols, the tools needed to mitigate the risk of CTE are within our grasp.
+                <br>
+                <br>
+                Yet, as we confront this pressing issue, one question looms large: Are we willing to prioritize the long-term health and well-being of our young athletes over the fleeting glory of victory on the field? The answer may well determine the future of sports as we know it.
+        </main>
+    </div>
+    
+    <footer class="footerContainer">
+        @2024 CTE Awareness Initiative | 
+        <a href="https://www.instagram.com/" target="_blank">
+            Instagram
+        </a>
+    </footer>
+
+     <script>
+        let state = 0;
+        function navManager() {
+            if (state == 0){
+                document.getElementsByClassName("navBar")[0].style.width = "250px";
+                document.getElementsByClassName("openbtn")[0].style.marginLeft = "180px";
+                document.getElementsByClassName("openbtn")[0].innerHTML = "&#10005"
+                document.getElementsByClassName("openbtn")[0].style.fontSize = "20px";
+                document.getElementsByClassName("openbtn")[0].style.rotate = "90deg";
+                document.getElementsByClassName("linkContainer")[0].style.visibility = "visible";
+                document.getElementsByClassName("linkContainer")[0].style.width = "250px";
+                document.getElementsByClassName("linkContainer")[0].style.opacity = "1";
+                state = 1;
+            } else {
+                document.getElementsByClassName("navBar")[0].style.width = "70px";
+                document.getElementsByClassName("openbtn")[0].style.marginLeft = "0px";
+                document.getElementsByClassName("openbtn")[0].innerHTML = "☰"
+                document.getElementsByClassName("openbtn")[0].style.fontSize = "25px";
+                document.getElementsByClassName("openbtn")[0].style.rotate = "0deg";
+                document.getElementsByClassName("linkContainer")[0].style.visibility = "hidden";
+                document.getElementsByClassName("linkContainer")[0].style.width = "70px";
+                document.getElementsByClassName("linkContainer")[0].style.opacity = "0";
+                state = 0;
+            }
+        }
+    </script>
+
+</body>
+
+
+</html>

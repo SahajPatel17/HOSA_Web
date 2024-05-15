@@ -53,10 +53,10 @@
 
         <artcile class="blurbContainer">
             <h1 class="blurbTitleContainer">
-            <a class="blurbTitle" href="ArticleHub.html" target="_self"> The Disease That Has Haunted Sports Players for Years: CTE</a>
+            <a class="blurbTitle" href="ArticleHub.html" target="_self"> Tackling CTE: A Growing Concern in School Sports</a>
             </h1>
             <p class="blurbContent">
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
+                CTE, once a distant worry, now haunts young athletes. Football's repetitive hits pose risks beyond the field. Recent cases like Junior Seau's underscore urgency for preventive measures. Will we prioritize health over glory?
             </p>
             <p class="readTime">
                 5 minute read
@@ -94,6 +94,10 @@
             <source src="video/HOSACTEVideo.MP4" type="video/mp4">
         </video>
     </div>
+
+    <h1 id="pdfTitle">
+        Check Our HOSA Portfolio!
+    </h1>
 
     <object
         type="application/pdf"
@@ -137,6 +141,17 @@
                 document.getElementsByClassName("linkContainer")[0].style.opacity = "0";
                 state = 0;
             }
+        }
+        function detectMob() {
+            return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
+        }
+        function restrict(){
+            if (detectMob()){
+                alert("Mobile access not avaiable, please try again on a desktop")
+            }
+        }
+        window.onload = function() {
+            restrict();
         }
     </script>
 </body>

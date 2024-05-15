@@ -1,0 +1,57 @@
+#BlogHeader{
+    text-align: center;
+    width: 800px;
+    margin-bottom: 30px;
+    margin-top:50px;
+    font-family: "Verdana, Geneva, Tahoma, sans-serif";
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+#blogSummary{
+    width: 800px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+#mainContent{
+    width: 800px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 2.0;
+}
+#profile{
+    border-radius: 50%;
+    width: 30px;
+    display:flex;
+    margin-right: 10px;
+}
+#author{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display:flex;
+    margin: auto;
+    margin-top: 20px;
+    align-items:center;
+}
+#date{
+    width:200px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-weight: 200;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#lineBreak{
+    width: 800px;
+    margin-left: 0px;
+}
+#mainDiv{
+    width: 60px;
+    margin-left: 25%;
+}
