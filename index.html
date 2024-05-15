@@ -146,7 +146,7 @@
             return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
         }
         function restrict(){
-            if (detectMob()){
+            if (navigator.userAgentData.mobile){
                 alert("Mobile access not avaiable, please try again on a desktop")
             }
         }
