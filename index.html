@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="temp">
 
 
 <head>
@@ -148,6 +148,8 @@
         function restrict(){
             if (isMobile()){
                 alert("Mobile access not avaiable, please try again on a desktop")
+                document.getElementById("temp").style.overflow = "hidden";
+                document.getElementById("temp").style.height = "100%";
             }
         }
         window.onload = function() {
