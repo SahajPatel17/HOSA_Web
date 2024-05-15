@@ -71,6 +71,13 @@
   margin-top: 40px;
   margin-bottom: 10px;
 }
+.footerContainer a{
+  text-decoration: none;
+  color: black;
+}
+.footerContainer a:hover{
+  color: gray;
+}
 ::-webkit-scrollbar {
     width: 10px;
   }
