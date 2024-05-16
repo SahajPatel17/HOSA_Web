@@ -55,9 +55,11 @@
     display: block;
     font-size: 50px;
     font-weight: 100;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 #vid{
-    margin-top: 20px;
+    margin-top: 30px;
     width: 70%;
 }
 #pdfView{
@@ -65,18 +67,20 @@
     display: block;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 40px;
 }
 #pdfTitle{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 100;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 #missionHeader{
     font-size: 50px;
     font-weight: 100;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 30px;
 }
 #missionContent{
     text-align: center;
@@ -84,7 +88,7 @@
     margin: auto;
     font-size: 20px;
     font-weight: 100;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
 }
