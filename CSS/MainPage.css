@@ -55,7 +55,6 @@
     display: block;
     font-size: 50px;
     font-weight: 100;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #vid{
     margin-top: 20px;
@@ -70,4 +69,20 @@
     font-weight: 100;
     text-align: center;
     margin-top: 100px;
+}
+#missionHeader{
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#missionContent{
+    text-align: center;
+    width: 1000px;
+    margin-left: 15%;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
 }
