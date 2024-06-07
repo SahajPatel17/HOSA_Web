@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/Reset.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/StandardSetUp.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/Article.css" />
+    <title>CTE Awareness</title>
+</head>
+
+
+<body>
+    <nav class="navBar">
+        <button class="openbtn" onclick="navManager()">☰</button>
+
+        <div class="linkContainer">
+            <a class="navLink" href="index.html">Home</a>
+            <a class="navLink" href="ArticleHub.html">Journal</a>
+            <a class="navLink" href="team.html">Team</a>
+        </div>
+    </nav>
+
+    <div class="logoContainer">
+        <img src="img/CTE_Logo.jpg" class="logo">
+        CTE Awareness Initiative
+    </div>
+
+    <div id="mainDiv">
+        <header id="BlogHeader">
+            Risk Factors: How Old Do You Have to Be to Get CTE?
+        </header>
+        
+        <section id="blogSummary">
+            CTE is labeled an “old age” disease, especially since it was first mistaken for Alzheimer’s. However, while most cases are seen in former players aged 40-50+, new research shows signs may start early in high school.
+        </section>
+        
+        <hr id="lineBreak">
+        
+        <section id="author">
+            <img id="profile"src="https://img.buzzfeed.com/buzzfeed-static/static/2020-03/5/23/enhanced/25a67c968a0a/enhanced-262-1583449224-1.png?output-format=jpg&output-quality=auto">
+            <span> Leo Toake</spans>
+        </section>
+        
+        <section id="date">
+                April 28, 2024, 12:23 a.m. ET
+        </section>
+        
+        <main id="mainContent">
+            <h1 class="subheader">CTE</h1>
+            When neuropathologist Dr. Bennet Omalu first discovered CTE in legendary Steelers center Mike Webster, many researchers and neurologists doubted him, arguing that “Iron Mike” had Alzheimer’s – not some crazy brain disease. Even today, many young football players are not worried about obtaining CTE because they do not think they will acquire CTE unless they compete at the NFL level.
+            <br>
+            <br>
+            However, a new interactive report from the New York Times involving a Boston University study examined the 152 cases of brains of children and young adult athletes who had died, most by suicide. The study reported a ground-breaking 40% of these athletes under the age of 30 had CTE of some severity. Most of these children played football, hockey, and soccer. Most of them didn’t even graduate high school. 
+            <br>
+            <br>
+            The important thing to remember about CTE is that everybody’s brain, skull, and anatomy are different. One person could smash their head 40 times and never suffer a concussion. Another person could endure contact 2 times and develop a severe brain injury. This is what makes CTE so unpredictable – scientists are unable to determine the exact number of brain collisions needed to sustain CTE since each athlete varies. 
+            <br>
+            <br>
+            Therefore, this knowledge gap leads to the question of even starting the sport altogether. One of the journalists in the study claims, “There is a line between the love of a game and the dangers it presents, and even those who have lost a child cannot agree where it is …”, confirming that parents are finding it hard to let their children play these contact sports, even if it may be their child’s #1 passion. American parents face this state of quandary all the time as they live in a country where football is an essential pillar of American culture. An entire day of the week is dedicated to football and several holidays such as Thanksgiving revolve around the sport.
+            <br>
+            <br>
+            To prevent CTE, families suggest that tackle football should not be played until high school, so players do not engage in collisions before they learn how to tackle properly. Others advocate for more information about CTE and its risks to understand the disease and make better choices when sending their children off to sports. Nevertheless, CTE continues to be a pressing issue in today’s society, and only through awareness can the harms of CTE be mitigated.
+        </main>
+    </div>
+    
+    <footer class="footerContainer">
+        
+        @2024 CTE Awareness Initiative | 
+        <a href="https://www.instagram.com/cte_bca" target="_blank">
+            Instagram
+        </a>
+        |
+        <a href="https://www.youtube.com/@cte-bca-by8sc" target="_blank">
+            Youtube
+        </a>
+    </footer>
+
+    <script>
+        let state = 0;
+        function navManager() {
+            if (state == 0){
+                document.getElementsByClassName("navBar")[0].style.width = "250px";
+                document.getElementsByClassName("openbtn")[0].style.marginLeft = "180px";
+                document.getElementsByClassName("openbtn")[0].innerHTML = "&#10005"
+                document.getElementsByClassName("openbtn")[0].style.fontSize = "20px";
+                document.getElementsByClassName("openbtn")[0].style.rotate = "90deg";
+                document.getElementsByClassName("linkContainer")[0].style.visibility = "visible";
+                document.getElementsByClassName("linkContainer")[0].style.width = "250px";
+                document.getElementsByClassName("linkContainer")[0].style.opacity = "1";
+                state = 1;
+            } else {
+                document.getElementsByClassName("navBar")[0].style.width = "70px";
+                document.getElementsByClassName("openbtn")[0].style.marginLeft = "0px";
+                document.getElementsByClassName("openbtn")[0].innerHTML = "☰"
+                document.getElementsByClassName("openbtn")[0].style.fontSize = "25px";
+                document.getElementsByClassName("openbtn")[0].style.rotate = "0deg";
+                document.getElementsByClassName("linkContainer")[0].style.visibility = "hidden";
+                document.getElementsByClassName("linkContainer")[0].style.width = "70px";
+                document.getElementsByClassName("linkContainer")[0].style.opacity = "0";
+                state = 0;
+            }
+        }
+    </script>
+
+</body>
+
+
+</html>
