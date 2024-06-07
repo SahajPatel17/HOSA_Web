@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/Reset.css" />
     <link rel="stylesheet" type="text/css" href="CSS/StandardSetUp.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/ArticleHub.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/ArticleBlurb.css" />
 </head>
 
 
@@ -17,20 +19,84 @@
         <div class="linkContainer">
             <a class="navLink" href="index.html">Home</a>
             <a class="navLink" href="ArticleHub.html">Journal</a>
-            <a class="navLink" href="ArticleHub.html">Lessons</a>
-            <a class="navLink" href="ArticleHub.html">Team</a>
-            <a class="navLink" href="ArticleHub.html">Supporters</a>
+            <a class="navLink" href="team.html">Team</a>
         </div>
     </nav>
 
     <div class="logoContainer">
-        <img src="img/Logo_PlaceHolder.png" class="logo">
-        Global Awareness Initiative
-        <button class="login" onclick="">LOGIN</button>
+        <img src="img/CTE_Logo.jpg" class="logo">
+        CTE Awareness Initiative
     </div>
+
+     <div>
+        <h1 id="headerTitle">
+            Find Your Favorite Student Made Articles!
+        </h1>
+    </div>
+
+
+    <input type="text" id="myInput" onkeyup="Search()" placeholder="Search for Articles.." title="Type in a Article">
+
+    <ul id="myUL">
+    <li>
+        <a href="art1.html">
+            <h1 class="blurbTitleContainer">
+                Tackling CTE: A Growing Concern in School Sports
+            </h1>
+            <p class="blurbContent">
+                CTE, once a distant worry, now haunts young athletes. Football's repetitive hits pose risks beyond the field. Recent cases like Junior Seau's underscore urgency for preventive measures. Will we prioritize health over glory?
+            </p>
+            <p class="readTime" id="articleHubBlurbTime">
+                4 minute read
+            </p>
+        </a>
+    </li>
+        
+        <li>
+            <a href="art2.html">
+                <h1 class="blurbTitleContainer">
+                    The Disease That Has Haunted Sports Players for Years: CTE
+                </h1>
+                <p class="blurbContent">
+                    Dive into the mysterious world of Chronic Traumatic Encephalopathy (CTE), a chilling consequence of repeated head impacts in sports. Explore its elusive detection, the battle for prevention, and the urgent need for safety measures to safeguard athletes' brains.
+                </p>
+                <p class="readTime" id="articleHubBlurbTime">
+                    6 minute read
+                </p>
+            </a>
+        </li>
+    </ul>
+
+    <footer class="footerContainer">
+        
+        @2024 CTE Awareness Initiative | 
+        <a href="https://www.instagram.com/cte_bca" target="_blank">
+            Instagram
+        </a>
+        |
+        <a href="https://www.youtube.com/@cte-bca-by8sc" target="_blank">
+            Youtube
+        </a>
+    </footer>
     
     <script>
         let state = 0;
+        function Search() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
         function navManager() {
             if (state == 0){
                 document.getElementsByClassName("navBar")[0].style.width = "250px";
@@ -41,8 +107,6 @@
                 document.getElementsByClassName("linkContainer")[0].style.visibility = "visible";
                 document.getElementsByClassName("linkContainer")[0].style.width = "250px";
                 document.getElementsByClassName("linkContainer")[0].style.opacity = "1";
-                document.getElementsByClassName("logo")[0].style.scale = "1.9";
-                document.getElementsByClassName("logo")[0].style.marginTop = "30px";
                 state = 1;
             } else {
                 document.getElementsByClassName("navBar")[0].style.width = "70px";
@@ -53,10 +117,21 @@
                 document.getElementsByClassName("linkContainer")[0].style.visibility = "hidden";
                 document.getElementsByClassName("linkContainer")[0].style.width = "70px";
                 document.getElementsByClassName("linkContainer")[0].style.opacity = "0";
-                document.getElementsByClassName("logo")[0].style.scale = "1";
-                document.getElementsByClassName("logo")[0].style.marginTop = "20px";
                 state = 0;
             }
+        }
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }   
+        function restrict(){
+            if (isMobile()){
+                alert("Mobile access not avaiable, please try again on a desktop")
+                document.getElementById("temp").style.overflow = "hidden";
+                document.getElementById("temp").style.height = "100%";
+            }
+        }
+        window.onload = function() {
+            restrict();
         }
     </script>
 
